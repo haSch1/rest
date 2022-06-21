@@ -1,5 +1,24 @@
 GET http://localhost:3000/subscribers
-
 ###
 
-GET http://localhost:3000/subscribers/12
+GET http://localhost:3000/subscribers/62b1affba46587581000edcd
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "7",
+    "subscribedToChannel": "Maiks Boy Group"
+}
+
+###
+DELETE http://localhost:3000/subscribers/62b1b16b3b8dd5fa453ede1e
+
+###
+PATCH http://localhost:3000/subscribers/62b1b78aa310441e7fbae0b2
+Content-Type: application/json
+
+{
+    "name": "new name"
+}
